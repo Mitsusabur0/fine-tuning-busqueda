@@ -1,28 +1,7 @@
 import os
 
-# --- PATHS ---
-
-# Input KB path
-# KB_FOLDER = os.getenv("KB_FOLDER", "./kb_full")
-KB_FOLDER = os.getenv("KB_FOLDER", "./kb_small_test")
-
-# Output paths
-
-# PIPELINE_OUTPUT_DIR = os.getenv("PIPELINE_OUTPUT_DIR", "outputs/full")
-# PIPELINE_CSV = os.getenv("PIPELINE_CSV", os.path.join(PIPELINE_OUTPUT_DIR, "full.csv"))
-
-PIPELINE_OUTPUT_DIR = os.getenv("PIPELINE_OUTPUT_DIR", "outputs/full")
-PIPELINE_CSV = os.getenv("PIPELINE_CSV", os.path.join(PIPELINE_OUTPUT_DIR, "1_base.csv"))
-PIPELINE_CSV_RETRIEVER = os.getenv("PIPELINE_CSV_RETRIEVER", os.path.join(PIPELINE_OUTPUT_DIR, "2_retriever.csv"))
-PIPELINE_CSV_ANSWERABLE = os.getenv("PIPELINE_CSV_ANSWERABLE", os.path.join(PIPELINE_OUTPUT_DIR, "3_is_answerable.csv"))
 
 
-
-
-OUTPUT_RESULTS_PARQUET = os.getenv(
-    "OUTPUT_RESULTS_PARQUET",
-    os.path.join(PIPELINE_OUTPUT_DIR, "pipeline_state.parquet")
-)
     
 # --- AWS CONFIG ---
 KB_SERVICE = os.getenv("KB_SERVICE", "bedrock-agent-runtime")
