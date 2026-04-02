@@ -6,7 +6,7 @@ Your task is to extract search filters from that `user_input`.
 These filters apply to the search for properties available for purchase.
 
 Output requirements:
-- Return exactly one JSON object wrapped between these tags: `<jsonl_response></jsonl_response>`.
+- Return exactly one JSON object wrapped between these tags: `<json_response></json_response>`.
 - Do not include any text outside those tags.
 - Only use filters from the predefined list below.
 - Never invent filters that are not explicitly requested by the user.
@@ -110,26 +110,10 @@ Extraction rules:
 - Never add a filter the user did not ask for.
 - If the `user_input` has no clear filters from the list, return an empty JSON object.
 - User messages may include typos, misspellings, or informal phrasing. Infer the most likely intended meaning.
-- Example: `prvdncia` -> `Providencia`.
 - If multiple comunas are mentioned, use the first one mentioned.
 - If no comuna is mentioned but a region is mentioned, place the region in the `comuna` filter.
+- Make sure to start your output with <json_response> and to end it with </json_response>. DO NOT include ANYTHING else.
 
-Examples:
 
-<examples>
-<example>
-user_input = "departamento en maipu 2 dormitorios"
-output = "<jsonl_response>{"tipo_inmueble": "departamento", "comuna": "Maipú", "dormitorios": 2}</jsonl_response>"
-</example>
-<example>
-user_input = "estoy buscando una casa para una pareja de profesionales sin hijos que entre los dos generan 1.500.000 de ingresos mensuales. Estamos buscando entre linares retiro parral chillan"
-output = "<jsonl_response>{"tipo_inmueble": "casa", "comuna": "Linares"}</jsonl_response>"
-</example>
-<example>
-user_input = "casa en chiloe hasta 1500 uf"
-output = "<jsonl_response>{"tipo_inmueble": "casa", "comuna": "Chiloe", "precio_max": 1500, "moneda": "UF"}</jsonl_response>"
-</example>
-</examples>
-
-Now extract the filters from the following `user_input` in Spanish:
+Now extract the filters from the following `user_input`:
 """

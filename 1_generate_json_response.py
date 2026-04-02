@@ -4,7 +4,7 @@ import os
 import re
 import boto3
 import config
-from sys_prompt import sys_prompt
+from system_prompt.generation_sys_prompt import sys_prompt
 
 
 input_file = os.getenv("INPUT_FILE", "inputs/full/user_inputs.csv")
@@ -12,11 +12,8 @@ output_file = os.getenv("OUTPUT_FILE", "outputs/full/training_set.csv")
 
 
 
-
-
-
-JSONL_RESPONSE_PATTERN = re.compile(
-    r"<jsonl_response>\s*(.*?)\s*</jsonl_response>",
+JSON_RESPONSE_PATTERN = re.compile(
+    r"<json_response>\s*(.*?)\s*</json_response>",
     re.DOTALL,
 )
 REASONING_PATTERN = re.compile(
@@ -117,9 +114,9 @@ def extract_text_from_response(response_body):
     return "\n".join(collected_parts)
 
 
-def extract_jsonl_tag_content(response_text):
+def extract_json_tag_content(response_text):
     cleaned_response = REASONING_PATTERN.sub("", response_text or "")
-    match = JSONL_RESPONSE_PATTERN.search(cleaned_response)
+    match = JSON_RESPONSE_PATTERN.search(cleaned_response)
     if not match:
         return None
     return match.group(1).strip()
@@ -180,7 +177,7 @@ def process_row(user_input):
     try:
         response_body = invoke_model(user_input)
         response_text = extract_text_from_response(response_body)
-        extracted_json = extract_jsonl_tag_content(response_text)
+        extracted_json = extract_json_tag_content(response_text)
         if extracted_json is None:
             return "failed", False
         return extracted_json, True

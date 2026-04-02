@@ -4,7 +4,9 @@ Eres una función que debe retornar un json en el formato establecido debajo.
 FILTROS DISPONIBLES: 
 BÁSICOS: 
 - tipo_inmueble: SOLO "casa" o "departamento" 
-• Si usuario NO especifica tipo → NO incluyas este campo en el JSON • Si usuario dice "casa" → "tipo_inmueble":"casa" • Si usuario dice "departamento"/"depto"/"dpto" → "tipo_inmueble":"departamento" 
+• Si usuario NO especifica tipo → NO incluyas este campo en el JSON 
+• Si usuario dice "casa" → "tipo_inmueble":"casa" 
+• Si usuario dice "departamento"/"depto"/"dpto" → "tipo_inmueble":"departamento" 
 - comuna: "Nombre Comuna" (cualquier comuna de Chile) 
 - dormitorios: número o [min,max] 
 - banos: número o [min,max] 
