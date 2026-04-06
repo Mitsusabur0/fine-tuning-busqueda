@@ -1,0 +1,7729 @@
+User_Input,Ground_Truth,Base_Model_Prediction,FineTuned_Prediction
+si quiero pagar un dividendo máximo de 800.000 de cuanto es lo maximo de valor que pued valer una casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","`<json_response>
+{
+  ""precio_max"": 800000
+}
+</json_response>`","<json_response>
+{
+  ""precio_max"": 800000,
+  ""moneda"": ""CLP""
+}
+</json_response>"
+departamento en chillan,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Chillán""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Chillán""
+}
+</json_response>"
+Una parcela con casa en pichilemu,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pichilemu""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pichilemu"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pichilemu""
+}
+</json_response>"
+departamento las condes,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamento"",
+    ""comuna"": ""Las Condes""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>"
+casa en antofagasta,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Antofagasta""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",<json_response></json_response>,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Departamento o casa en temuco,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Temuco""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamento"",
+    ""comuna"": ""temuco"",
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes"": null,
+    ""gimnasio"": null,
+    ""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+Casas en San Antonio,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Antonio""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+}
+```
+
+La respuesta es vacía porque el usuario no especifica ninguna de las opciones de filtro.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Antonio""
+}
+</json_response>"
+casas en linares,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Linares""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            user_input = user_input.replace(filter, ""casas"")
+        if filter == ""comuna"":
+            user_input = user_input.replace(filter, ""linares"")
+        if filter == ""precio_min"" or filter == ""precio_max"":
+            user_input = user_input.replace(filter, ""precio"")
+        if filter == ""moneda"":
+            user_input = user_input.replace(filter, ""moneda"")
+        if filter == ""superficie_min"" or filter == ""superficie_max","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Linares""
+}
+</json_response>"
+departamento de 2 habitaciones en viña del mar,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Viña del Mar"",
+  ""dormitorios"": 2
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Viña del Mar"",
+  ""dormitorios"": 2
+}
+</json_response>"
+"Hola, casa 1800 uf","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 1800,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""precio_min"": ""1800"",
+        ""superficie_min"": null,
+        ""comuna"": null,
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""moneda"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""areas_verdes"": null,
+        ""gimnasio"": null,
+        ""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 1800,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en antofagasta 4000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>","$json_response = {}
+
+$filters = array(
+    ""tipo_inmueble"" => ""casa"",
+    ""comuna"" => ""Antofagasta"",
+    ""precio_min"" => 4000,
+    ""superficie_min"" => 4000,
+    ""superficie_max"" => 4000,
+)
+
+foreach ($filters as $filter => $value) {
+    if (strpos(strtolower($user_input), $filter)!== false) {
+        $json_response[$filter] = $value;
+    }
+}
+
+$json_response = ""<json_response>"". json_encode($json_response). ""</json_response>""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casas y departamentos en Antofagasta,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casas y departamentos"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+departamento en iquique,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Iquique""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""comuna"": ""Iquique""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Iquique""
+}
+</json_response>"
+Busco en Santiago,"<json_response>
+{
+  ""comuna"": ""Santiago""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+casa en osorno,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Osorno""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Osorno""
+}
+</json_response>"
+Villa alemana,"<json_response>
+{
+  ""comuna"": ""Villa Alemana""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Villa Alemana""
+}
+</json_response>"
+Casa Huechuraba,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Huechuraba""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Huechuraba""
+}
+</json_response>"
+casa en buin,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>","$json_response = {}
+for filter in Possible_filters:
+    if filter in user_input:
+        json_response[filter] = user_input
+print(json_response)","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>"
+casa en puente alto,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>"
+Necesito dpto.stgo centro Serca metro santa  ana,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""zona_transporte"": true
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""dpto"",
+  ""comuna"": ""Santiago"",
+  ""zona_educacion"": ""centro"",
+  ""zona_transporte"": ""metro"",
+  ""zona_centros_salud"": ""santa ana""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago Centro"",
+  ""zona_transporte"": true
+}
+</json_response>"
+DEPARTAMENTO EN CHILLAN  2 DORMITORIOS 1 BAÑO,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Chillan"",
+  ""dormitorios"": 2,
+  ""banos"": 1
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""DEPARTAMENTO"",
+  ""dormitorios"": ""2"",
+  ""banos"": ""1""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Chillán"",
+  ""dormitorios"": 2,
+  ""banos"": 1
+}
+</json_response>"
+casa usada en cerrillos,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Cerrillos""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Cerrillos""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Cerrillos""
+}
+</json_response>"
+Hasta 3000 uf,"<json_response>
+{
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": null,
+    ""comuna"": null,
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes"": null","<json_response>
+{
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en la comuna de estación central o quinta normal,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Estación Central""
+}
+</json_response>","`<json_response>
+{}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Estación Central""
+}
+</json_response>"
+Si tengo una propiedad eso lo puedo hipotecar,"<json_response>
+{}
+</json_response>","`<json_response>`
+
+```json
+{}
+```
+
+No se encontraron filtres de búsqueda en el input del usuario.","<json_response>
+{}
+</json_response>"
+Busco casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+"Casa en santiago centro, estacion central, providencia o ñuñoa","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago Centro""
+}
+</json_response>","`<json_response>`
+
+{
+  ""comuna"": [""Santiago"", ""Providencia"", ""Ñuñoa""],
+  ""estacionamientos"": true
+}</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago Centro""
+}
+</json_response>"
+"PROYECTOS VIÑA DEL MAR, QUILPUE O VILLA ALEMANA","<json_response>
+{
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>","<json_response>
+  {}
+</json_response>","<json_response>
+{
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>"
+Quiero comprar una casa en los andes qué esta 130 millones de pesos,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Andes"",
+  ""precio_max"": 130000000,
+  ""moneda"": ""CLP""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""no especificado"",
+  ""dormitorios"": ""no especificado"",
+  ""banos"": ""no especificado"",
+  ""precio_min"": 130000000,
+  ""precio_max"": null,
+  ""moneda"": ""pesos"",
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_sub","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 130,
+  ""moneda"": ""CLP""
+}
+</json_response>"
+busco casa con 3 dormitorios y 2 baños en San pedro de la paz,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Pedro de la Paz"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Pedro de Atacama"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Pedro de la Paz"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>"
+departamento en La Serena,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Serena""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if ""departamento"" in user_input.lower() and filter in user_input.lower():
+        if filter == ""tipo_inmueble"":
+            $json_response[filter] = ""departamento""
+        elif filter == ""comuna"":
+            $json_response[filter] = ""La Serena""
+        elif filter == ""dormitorios"":
+            $json_response[filter] = ""1""
+        elif filter == ""banos"":
+            $json_response[filter] = ""1""
+        elif filter == ""precio_min"":
+            $json_response[filter] = ""0","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Serena""
+}
+</json_response>"
+Colina región metri,"<json_response>
+{
+  ""comuna"": ""Colina""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": null,
+  ""comuna"": null,
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,","<json_response>
+{
+  ""comuna"": ""Colina""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa en San Ramón,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Ramón""
+}
+</json_response>","$json_response = {}
+
+while ""tipo_inmueble"" in user_input:
+    user_input = user_input.replace(""tipo_inmueble"", """")
+if ""comuna"" in user_input:
+    json_response[""comuna""] = user_input
+while ""dormitorios"" in user_input:
+    user_input = user_input.replace(""dormitorios"", """")
+while ""banos"" in user_input:
+    user_input = user_input.replace(""banos"", """")
+while ""precio_min"" in user_input:
+    user_input = user_input.replace(""precio_min"", """")
+while ""precio_max"" in user_input:
+    user_input","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Ramón""
+}
+</json_response>"
+"Hola Vivi, me interesa explorar opciones de compra de casa en la ciudad de Temuco. Qué alternativas tienes disponible?","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>","```json
+{
+  ""comuna"": ""Temuco"",
+  ""tipo_inmueble"": ""casa"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"": null,
+  ""salon_eventos"": null,
+  ""","<json_response>
+{
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+Valdivia 4 habitaciones,"<json_response>
+{
+  ""comuna"": ""Valdivia"",
+  ""dormitorios"": 4
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""4 habitaciones"",
+    ""comuna"": ""Valdivia""
+  }
+</json_response>","<json_response>
+{
+  ""comuna"": ""Valdivia"",
+  ""dormitorios"": 4
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",<json_response></json_response>,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+existen proyectos en Antofagasta,"<json_response>
+{
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": null,
+  ""comuna"": ""Antofagasta"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null","<json_response>
+{
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+"departamento, primera vivienda","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""con_subsidio"": true
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""zona_educacion"": ""primaria"",
+  ""zona_transporte"": ""primaria""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa en puente alto,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if user_input.lower() == ""casa"":
+                $json_response[filter] = ""casa""
+            elif user_input.lower() == ""apartamento"":
+                $json_response[filter] = ""apartamento""
+            else:
+                $json_response[filter] = ""otro""
+        elif filter == ""comuna"":
+            if user_input.lower() == ""puente alto"":
+                $json_response[filter] = ""puente alto""
+            else:
+                $","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>"
+quiero comprar la propiedad en la que vivo,"<json_response>
+{}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+    {}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa con subsidio Ds1 tramo 2,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>","<json_response>
+{""tipo_inmueble"": ""casa"", ""con_subsidio"": true}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>"
+Casa en cualquier comuna,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+departamento en las condes de 3 piezas,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Las Condes"",
+  ""dormitorios"": 3
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Las Condes"",
+  ""dormitorios"": 3
+}
+</json_response>"
+casas en providencia,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Providencia""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casas"",
+    ""comuna"": ""Providencia"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Providencia""
+}
+</json_response>"
+Casa en Melipilla con 2 o 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Melipilla"",
+  ""dormitorios"": [
+    2,
+    3
+  ]
+}
+</json_response>","$json_response = {}
+ 
+for filter in Possible_filters:
+    if 'dormitorios' in user_input.lower() and filter == 'dormitorios':
+        if '2' in user_input.lower() or '3' in user_input.lower():
+            $json_response[filter] = user_input.lower().split('con')[0].strip()
+            break
+ 
+if 'tipo_inmueble' in user_input.lower() and user_input.lower().strip() == 'casa':
+    $json_response['tipo_inmueble'] = 'casa'
+ 
+if 'comuna' in user_input.lower():
+    $json","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Melipilla"",
+  ""dormitorios"": [
+    2,
+    3
+  ]
+}
+</json_response>"
+Me venden un departamento en 20 millones en Valparaíso,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Valparaíso"",
+  ""precio_max"": 20000000,
+  ""moneda"": ""CLP""
+}
+</json_response>","`<json_response>`
+
+`{}`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Valparaíso"",
+  ""precio_max"": 20000000,
+  ""moneda"": ""CLP""
+}
+</json_response>"
+Casa en Valdivia con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valdivia"",
+  ""dormitorios"": 3
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""casa"" in user_input.lower():
+                $json_response[filter] = ""casa""
+            elif ""apartamento"" in user_input.lower():
+                $json_response[filter] = ""apartamento""
+            else:
+                $json_response[filter] = ""otro""
+        elif filter == ""comuna"":
+            if ""valdivia"" in user_input.lower():
+                $json_response[filter] = ""valdivia""
+            else:
+                $","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valdivia"",
+  ""dormitorios"": 3
+}
+</json_response>"
+"Casa en osorno , rahue alto hasta 1260 uf","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Osorno"",
+  ""precio_max"": 1260,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": ""1260"",
+  ""comuna"": ""osorno"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""superficie_max"": ""1260"",
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Osorno"",
+  ""precio_max"": 1260,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa usada en la cisterna,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>"
+"casa en la v region, con cuatro habitaciones","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región V"",
+  ""dormitorios"": 4
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 4,
+  ""comuna"": ""La Victoria""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso"",
+  ""dormitorios"": 4
+}
+</json_response>"
+Departamento en arica,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Arica""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Arica""
+}
+</json_response>"
+departamentos 2d 1b en la region metropolitana,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Región Metropolitana"",
+  ""dormitorios"": 2,
+  ""banos"": 1
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""departamentos"",
+  ""region"": ""Metropolitana"",
+  ""dormitorios"": 2,
+  ""banos"": 1,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Región Metropolitana"",
+  ""dormitorios"": 2,
+  ""banos"": 1
+}
+</json_response>"
+casas en la florida a 3500 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 3500,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casas"",
+  ""comuna"": ""Florida"",
+  ""precio_min"": 3500
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 3500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+leasing habitacional,"<json_response>
+{}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{}
+</json_response>"
+Sector sur de santiago,"<json_response>
+{
+  ""comuna"": ""Santiago""
+}
+</json_response>","<json_response>
+  {
+    ""comuna"": ""Santiago"",
+    ""tipo_inmueble"": null,
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes","<json_response>
+{
+  ""comuna"": ""Santiago Sur""
+}
+</json_response>"
+Departamentos en la V region,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""comuna"": ""V region"",
+  ""tipo_inmueble"": ""departamentos""
+}
+</json_response>`
+
+Nota: Se ha inferido que el usuario está buscando departamentos en la región de la V. No hay otros filtros claros en el usuario.","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+Casa region de Coquimbo,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Coquimbo""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Coquimbo""
+}
+</json_response>"
+Busca ecocasas,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""sostenibilidad_certificada"": true
+}
+</json_response>","`<json_response>`
+
+`{""tipo_inmueble"": ""ecocasas""}`
+
+</json_response>","<json_response>
+{
+  ""sostenibilidad_certificada"": true
+}
+</json_response>"
+CASA EN CALAMA,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Calama""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Calama""
+}
+</json_response>"
+"Hola, quiero comprar una casa usada en la ciudad de Quilpué, pero no puedo obtener el crédito que falta para la compra","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quilpué""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa usada"",
+  ""comuna"": ""Quilpué"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""g","<json_response>
+{
+  ""comuna"": ""Quilpué""
+}
+</json_response>"
+Busco una vivienda amoblada y cerca del centro en Copiapó,"<json_response>
+{
+  ""comuna"": ""Copiapó""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""amoblada"",
+  ""comuna"": ""Copiapó"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Copiapó""
+}
+</json_response>"
+departamento,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+"departamento 2 dormitorios en Santiago, Macul","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": ""2"",
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"":","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Macul"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Busco casa en Maipú con 3 dormitorios 2 baños,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>`
+
+Nota: Se inferió el tipo de inmueble como ""casa"" porque es el término más comúnmente utilizado en el contexto de la búsqueda de propiedades en Chile.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>"
+Casas en Chillán,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Chillán""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Chillán"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Chillán""
+}
+</json_response>"
+casa ern la araucania,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Araucanía""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""La Araucania""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Araucaña""
+}
+</json_response>"
+Casa en Macul hasta 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Macul"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Macul"",
+    ""precio_max"": ""3000""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Macul"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa playa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+"BUSCO UNA CASA, VIVO EN PUERTO MONTT","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""comuna"": ""Puerto Montt"",
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt""
+}
+</json_response>"
+Casa en maipu con 2 o 3 habitaciones,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": [
+    2,
+    3
+  ]
+}
+</json_response>","$json_response = {}
+ 
+
+for filter in Possible_filters:
+    if filter == ""tipo_inmueble"" and ""casa"" in user_input.lower():
+        json_response[filter] = ""casa""
+    elif filter == ""dormitorios"" and (""2"" in user_input or ""3"" in user_input):
+        json_response[filter] = ""2 o 3""
+    elif filter == ""comuna"" and ""maipu"" in user_input.lower():
+        json_response[filter] = ""maipu""
+    elif filter == ""precio_min"" and ""precio_min"" in user_input.lower","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": [
+    2,
+    3
+  ]
+}
+</json_response>"
+casa en huechuraba,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Huechuraba""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Huechuraba""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Huechuraba""
+}
+</json_response>"
+Quiero una casa en padre hurtado que salga 4000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado"",
+  ""precio_min"": 4000
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa pequeña con gran patio,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",$json_response={},"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+departamento 4 dormitorios tres baños,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 4,
+  ""banos"": 3
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 4,
+  ""banos"": 3
+}
+</json_response>"
+depto en litoral,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Litoral""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Litoral""
+}
+</json_response>"
+"una casa de un piso, ojala con solo 2 dormitorios, algo pequeño","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2,
+  ""superficie_min"": null,
+  ""precio_min"": null,
+  ""moneda"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"": null,
+  ""salon_eventos"":","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Casas usadas,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","$json_response = {}
+
+`
+
+No filters were found in the user's input.","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa nueva en Rengo sexta reg,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Rengo""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Rengo"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Rengo""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa en arica,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Arica""
+}
+</json_response>","$json_response = {}
+
+while True:
+    user_input = input(""Please enter your query: "")
+    words = user_input.split()
+    filters = []
+    for filter in Possible_filters:
+        if filter in words:
+            if filter == ""tipo_inmueble"":
+                if ""casa"" in words:
+                    filters.append(""casa"")
+                elif ""apartamento"" in words:
+                    filters.append(""apartamento"")
+                else:
+                    continue
+            elif filter == ""comuna"":
+                if ""arica"" in words:
+                    filters.append(""Arica"")
+                else:
+                    continue
+            elif filter == ""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Arica""
+}
+</json_response>"
+Casas en san bernardo,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>","$json_response = {}
+
+if ""tipo_inmueble"" in user_input.lower():
+    json_response[""tipo_inmueble""] = ""casa""
+
+if ""comuna"" in user_input.lower():
+    json_response[""comuna""] = ""San Bernardo""
+
+if ""dormitorios"" in user_input.lower():
+    json_response[""dormitorios""] = ""sí""
+
+if ""banos"" in user_input.lower():
+    json_response[""banos""] = ""sí""
+
+if ""precio_min"" in user_input.lower():
+    json_response[""precio_min""] = ""no especificado""
+
+if ""precio_max""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>"
+"depto, cerro placeres, valparaiso","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""depto"",
+  ""comuna"": ""Valparaíso"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Cerro Plateros"",
+  ""valparaíso"": true
+}
+</json_response>"
+Casas en maipu hasta de 2500 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casas"",
+  ""comuna"": ""maipu"",
+  ""precio_max"": ""2500""
+}
+</json_response>
+```
+
+En este `user_input`, se identifican los siguientes filtros:
+
+- `tipo_inmueble` (casas)
+- `comuna` (Maipú)
+- `precio_max` (de 2500 uf)","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+mostrar casa no repetidas en la región del maule,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maule""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región del Maule"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maule""
+}
+</json_response>"
+casa hasta 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": ""3000""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa menor a 100 millones en santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_max"": 100000000,
+  ""moneda"": ""CLP""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_min"": ""100000000""
+}
+</json_response>`
+
+Nota: Se inferió que ""menor a"" significa ""menor o igual a"" y que ""100 millones"" se traduce a ""100000000"".","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_max"": 100000000,
+  ""moneda"": ""CLP""
+}
+</json_response>"
+"Hola Viví, cuál sería el valor a pagar de una casa con tres dormitorios en san San Fernando","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Fernando"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""dormitorios"",
+  ""comuna"": ""San Fernando"",
+  ""precio_min"": ""no especificado"",
+  ""precio_max"": ""no especificado"",
+  ""moneda"": ""no especificado"",
+  ""superficie_min"": ""no especificado"",
+  ""superficie_max"": ""no especificado"",
+  ""estacionamientos"": ""no especificado"",
+  ""bodegas"": ""no especificado"",
+  ""sostenibilidad_certificada"": ""no especificado"",
+  ""con_subsidio"": ""no especific","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Fernando"",
+  ""dormitorios"": 3
+}
+</json_response>"
+casa en puente alto,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Puente Alto"",
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>"
+Viviendas en la V región,"<json_response>
+{
+  ""comuna"": ""V región""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if ""región"" in user_input.lower():
+        if filter == ""tipo_inmueble"":
+            if ""vivienda"" in user_input.lower():
+                $json_response[filter] = ""vivienda""
+        elif filter == ""comuna"":
+            if ""viviendas"" in user_input.lower():
+                $json_response[filter] = ""viviendas""
+        elif filter == ""dormitorios"" and ""dormir"" in user_input.lower():
+            $json_response[filter] = ""dormir""
+        elif filter == ""","<json_response>
+{
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+Me interesa una casa en el sur,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Sur""
+}
+</json_response>","`<json_response>`
+
+`{}
+
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Sur de Chile""
+}
+</json_response>"
+"nececito un departamento de 2 habitaciones en un barrio residencial, con buena conexión a autopistas, bajo las 2.500 UF","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 2,
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""no especificado"",
+  ""dormitorios"": 2,
+  ""banos"": 1,
+  ""precio_min"": 2500,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 2,
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa usada soy soltero,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa en la serena,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""La Serena""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena""
+}
+</json_response>"
+Busco una vivienda de cuatro dormitorios o en su defecto con tres dormitorios pero con sala de estar como para armar un cuarto dormitorio,"<json_response>
+{
+  ""dormitorios"": [
+    3,
+    4
+  ]
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": [""cuatro_dormitorios"", ""tres_dormitorios_con_sala_estar""],
+  ""comuna"": null,
+  ""dormitorios"": [""cuatro_dormitorios"", ""tres_dormitorios""],
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,","<json_response>
+{
+  ""dormitorios"": 3
+}
+</json_response>"
+Una casa en san carlos,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Carlos""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Carlos""
+}
+</json_response>"
+Busca casa usada,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        json_response[filter] = user_input.split(filter)[1]
+
+print(json_response)","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa en Tomé con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Tomé"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>
+{""tipo_inmueble"": ""casa"", ""dormitorios"": 3}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Tomé"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casa en la región metropolitana hasta 2800 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región Metropolitana"",
+  ""precio_max"": 2800,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{""tipo_inmueble"": ""casa"", ""comuna"": ""región metropolitana"", ""precio_max"": ""2800""}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región Metropolitana"",
+  ""precio_max"": 2800,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Busci casa nueva en peñaflor 2 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñaflor"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2,
+  ""comuna"": ""Peñaflor""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñaflor"",
+  ""dormitorios"": 2
+}
+</json_response>"
+CASA EN VICTORIA,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Victoria""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Victoria""
+}
+</json_response>"
+Casa en Colina con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Colina"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""dormitorios"": 3
+    }
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Colina"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Departamento en costa azul,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Costa Azul""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if ""departamento"" in user_input.lower() and filter not in user_input.lower():
+        if filter == ""tipo_inmueble"":
+            json_response[filter] = ""departamento""
+        elif filter == ""comuna"":
+            json_response[filter] = ""costa azul""
+        elif filter == ""dormitorios"":
+            json_response[filter] = ""1""
+        elif filter == ""banos"":
+            json_response[filter] = ""1""
+        elif filter == ""precio_min"":
+            json_response[filter] = ""0""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Costa Azul""
+}
+</json_response>"
+Departamento comuna independencia,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Independencia""
+}
+</json_response>","$json_response = {}
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            json_response[filter] = ""departamento""
+        elif filter == ""comuna"":
+            json_response[filter] = ""independencia""
+        elif filter == ""dormitorios"" or filter == ""banos"":
+            json_response[filter] = ""1""
+        elif filter == ""precio_min"" or filter == ""precio_max"":
+            json_response[filter] = ""100000000""
+        elif filter == ""moneda"":
+            json_response[filter] = ""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Independencia""
+}
+</json_response>"
+Propiedades viña del mar,"<json_response>
+{
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+parcelas en valdicia,"<json_response>
+{
+  ""comuna"": ""Valdivia""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Valdivia""
+}
+</json_response>"
+Departamento en Antofagasta,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+proyectos en valparaiso,"<json_response>
+{
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+Busco departamento en Antofagasta,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamento"",
+    ""comuna"": ""Antofagasta""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+casa de 4 habitaciones,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 4
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 4
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 4
+}
+</json_response>"
+Cada en peñalolen 900uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñalolén"",
+  ""precio_max"": 900,
+  ""moneda"": ""UF""
+}
+</json_response>",`<json_response></json_response>`,"<json_response>
+{
+  ""comuna"": ""Peñalolén"",
+  ""precio_max"": 900,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",<json_response></json_response>,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa villa alemana,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Villa Alemana""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Villa Alemana""
+}
+</json_response>"
+casa usada en Independencia Santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Independencia""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Independencia"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"":","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Independencia""
+}
+</json_response>"
+Departamento osorno 2 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Osorno"",
+  ""dormitorios"": 2
+}
+</json_response>","<json_response>
+{""tipo_inmueble"": ""departamento"", ""dormitorios"": 2}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Osorno"",
+  ""dormitorios"": 2
+}
+</json_response>"
+busco casa cerca de independencia,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Independencia""
+}
+</json_response>","<json_response>
+  </json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Independencia""
+}
+</json_response>"
+Busca casa en puchilemu,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puchilemu""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puchilemu""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puchile""
+}
+</json_response>"
+Casas en la cruz,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Cruz""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Cruz""
+}
+</json_response>"
+En la región de Ñuble comuna de san car,"<json_response>
+{
+  ""comuna"": ""San Carlos""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""comuna"",
+    ""comuna"": ""san car"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas","<json_response>
+{
+  ""comuna"": ""Ñuble""
+}
+</json_response>"
+Me podrias mostras proyectos en Antofagasta hasta 400UF,"<json_response>
+{
+  ""comuna"": ""Antofagasta"",
+  ""precio_max"": 400,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+`""tipo_inmueble"": ""proyectos"",`
+
+`""comuna"": ""Antofagasta"",`
+
+`""precio_max"": ""4000000""`,","<json_response>
+{
+  ""comuna"": ""Antofagasta"",
+  ""precio_max"": 400,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Departamento en viña 2d,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Viña del Mar"",
+  ""dormitorios"": 2
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Viña del Mar"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Departamento en la Comuna de La Cisterna,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>
+```
+
+La respuesta se basa en la suposición de que el usuario está buscando un departamento en la comuna de La Cisterna.","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>"
+CASA EN VALLENAR,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Vallenar""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+```
+
+`</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valle Grande""
+}
+</json_response>"
+casa en villarrica o alrededores,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Villarrica""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Villarrica""
+}
+</json_response>"
+quero ver  casas de Temuco,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>","`<json_response>`
+
+`""comuna"": ""Temuco"",`
+
+`""tipo_inmueble"": ""casas""`
+
+`</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+Casa en Santiago 2 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2
+}
+</json_response>`
+
+Nota: Se inferió que el usuario solicitaba una casa con 2 dormitorios. No se encontraron otros filtros en el input.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 2
+}
+</json_response>"
+HOLS BUSCO CASA EN REQUINOA,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Requínoa""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Requinoa"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"":","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota""
+}
+</json_response>"
+casa de al mwnos 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3
+}
+</json_response>","<json_response>
+{
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3
+}
+</json_response>"
+casa en puente alto,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>"
+"hola, hay algunproyecto de vivienda nueva en nacimiento","<json_response>
+{
+  ""comuna"": ""Nacimiento""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": null,
+    ""comuna"": ""Nacimiento"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes","<json_response>
+{
+  ""comuna"": ""Nacimiento""
+}
+</json_response>"
+casas maipu 2 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 2
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casas"",
+        ""dormitorios"": ""2""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 2
+}
+</json_response>"
+casa departamento antofagasta,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Antofagasta"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+casa o departamento en penco,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Penco""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Penco""
+}
+</json_response>`
+
+The user has requested a house in Penco.","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Penco""
+}
+</json_response>"
+Casa en santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Santiago""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+casa en comuna de el monte 2 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""El Monte"",
+  ""dormitorios"": 2
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""El Monte"",
+  ""dormitorios"": 2
+}
+</json_response>"
+casa o departamento de hasta 120 millones,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""precio_max"": 120000000,
+  ""moneda"": ""CLP""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa o departamento"",
+        ""precio_max"": ""120 millones""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""precio_max"": 120000000,
+  ""moneda"": ""CLP""
+}
+</json_response>"
+"Casa de 100 millones, tengo ahorro del 20%","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 100,
+  ""moneda"": ""CLP""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_min"": 100000000,
+  ""ahorro"": 20000000
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 100000000,
+  ""moneda"": ""CLP"",
+  ""precio_min"": 80000000,
+  ""con_subsidio"": true
+}
+</json_response>"
+casa melipilla,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Melipilla""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            user_input = user_input.replace(filter, ""casa"")
+        json_response[filter] = user_input
+
+print(json_response)","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Melipilla""
+}
+</json_response>"
+"necesito una casa para arredndar en comuna de la reina, santiago, me ayudas con eso?","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Reina""
+}
+</json_response>","`<json_response>`
+
+`
+
+`
+
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Reina""
+}
+</json_response>"
+departamento,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","<json_response>
+    {
+      ""tipo_inmueble"": ""departamento""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+Busco departamento con dos habitaciones en Temuco,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Temuco""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 2
+}
+</json_response>"
+busco casa en la region de los lagos,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Lagos""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+}
+```
+
+La `user_input` no menciona ninguna de las opciones de filtro especificadas.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Lagos""
+}
+</json_response>"
+hola hay casas usadas ?,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Hola! Busco una casa en Temuco o padre las casas,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>",`<json_response></json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+Casa en lo prado 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Lo Prado"",
+  ""dormitorios"": 3
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Lo Prado"",
+  ""dormitorios"": 3
+}
+</json_response>"
+CUTO SON 50 MILLONES EN UF,"<json_response>
+{
+  ""precio_max"": 50000000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": null,
+  ""comuna"": null,
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas","<json_response>
+{}
+</json_response>"
+Necesito una vivienda en San Carlos Ñuble,"<json_response>
+{
+  ""comuna"": ""San Carlos""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""comuna"": ""San Carlos""
+}
+</json_response>"
+Casa en Buin,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Buin""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>"
+Proyectos en Quillota,"<json_response>
+{
+  ""comuna"": ""Quillota""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": null,
+    ""comuna"": ""Quillota"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_ver","<json_response>
+{
+  ""comuna"": ""Quillota""
+}
+</json_response>"
+Casa en Pedro Aguirre Cerda hasta 2200 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pedro Aguirre Cerda"",
+  ""precio_max"": 2200,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>{ ""tipo_inmueble"": ""casa"", ""precio_max"": ""2200"", ""comuna"": ""Pedro Aguirre Cerda"" }</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 2200,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Depto en ñuñoa 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""dormitorios"": 3
+}
+</json_response>","$json_response = {}
+ 
+
+for filter in Possible_filters:
+    if ""filter"" in user_input.lower() and filter in user_input.lower():
+        if filter == ""tipo_inmueble"":
+            if ""depto"" in user_input.lower() or ""deptos"" in user_input.lower() or ""departamento"" in user_input.lower():
+                $json_response[filter] = 3
+            else:
+                $json_response[filter] = ""No se encontró""
+        elif filter == ""comuna"":
+            if ""comuna"" in user_input.lower() or ""ciudad"" in user_input.lower():
+                $","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""dormitorios"": 3
+}
+</json_response>"
+"casa 3 dormitorios 2 baños en temuco, los angeles u osorno","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>"
+casa nueva dentro de santiago desde UF1500 A UF4000,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_min"": 1500,
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_min"": 1500,
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_min"": 1500,
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casas en concepción,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concepción""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concepción""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concepción""
+}
+</json_response>"
+Quiero una casa en las condes,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+```
+
+`</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+depto nuevo huechuraba,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Huechuraba""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""depto"",
+    ""comuna"": ""Huechuraba"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Huechuraba""
+}
+</json_response>"
+Ayúdame a encontrar departamentos en Santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","<json_response>
+
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""comuna"": ""Santiago"",
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": ""CLP"",
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+casa en la calera,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Calera""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+}
+```
+
+The `user_input` does not clearly indicate any specific filter.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Calera""
+}
+</json_response>"
+4 dormitorios,"<json_response>
+{
+  ""dormitorios"": 4
+}
+</json_response>","(json_response)
+{
+  ""dormitorios"": ""4""
+}
+(json_response)","<json_response>
+{
+  ""dormitorios"": 4
+}
+</json_response>"
+Buscar casa la Florida,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>"
+casa en Melipilla,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Melipilla""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Melipilla""
+}
+</json_response>"
+Casa en puen,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>"
+viña del mar,"<json_response>
+{
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>","$json_response = {}
+ 
+for filter in Possible_filters:
+    if filter in user_input:
+        json_response[filter] = user_input.replace(filter, '').strip()
+        break
+else:
+    json_response = {}","<json_response>
+{
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>"
+departamento en vitacura,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Vitacura""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Vitacura""
+}
+</json_response>"
+Angol novena region,"<json_response>
+{
+  ""comuna"": ""Angol""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Angol""
+}
+</json_response>"
+Quiero una casa cerca de Santiago para una renta de 1.500.000,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_max"": 1500000,
+  ""moneda"": ""CLP""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_min"": 1500000,
+  ""superficie_min"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"": null,
+  ""salon_eventos"": null,
+  ""zona_educacion"": null","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_max"": 1500000,
+  ""moneda"": ""CLP""
+}
+</json_response>"
+departamento santiago cerca metro,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""zona_transporte"": true
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""comuna"": ""Santiago"",
+        ""zona_transporte"": ""metro""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""zona_transporte"": true
+}
+</json_response>"
+Que casas se pueden comprar con DS120,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casas"",
+  ""comuna"": null,
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": ""DS120"",
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>"
+Casa en alto hospicio o iquique,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Alto Hospicio""
+}
+</json_response>","`<json_response>
+{""tipo_inmueble"": ""casa"", ""comuna"": ""Santiago"", ""dormitorios"": ""2"", ""banos"": ""2"", ""precio_min"": ""50000000"", ""precio_max"": ""100000000"", ""moneda"": ""CLP"", ""superficie_min"": ""60"", ""superficie_max"": ""150"", ""estacionamientos"": ""1"", ""bodegas"": ""1"", ""sostenibilidad_certificada"": ""true"", ""con_subsidio"": ""false"", ""piscina"": ""true"", ""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Alto Hospicio""
+}
+</json_response>"
+Casa en lo espejo hasta 2500 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Lo Espejo"",
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Lo Espejo"",
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+estoy buscando departamentos usados,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","`<json_response>`
+
+```
+{
+}
+```
+
+La entrada del usuario no indica ninguna de las opciones de filtros definidas.","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+las condes casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>"
+BUSCO CASAS CON DS19 O FOGAES,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""sostenibilidad_certificada"": true
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""DS19"",
+  ""bodegas"": ""Fogaes""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>"
+Casa en Maipú,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        json_response[filter] = user_input.count(filter)
+
+print(json_response)","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>"
+Casa con minimo 2 dormitorios y patio sector rural de la V region,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""V region"",
+  ""dormitorios"": 2,
+  ""superficie_min"": ""patio sector rural"",
+  ""moneda"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"": null,
+  ""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+```
+
+`</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casas en la comuna de padre hurtado,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casas"",
+        ""comuna"": ""Padre Hurtado"",
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""areas_verdes"": null,
+        ""gimnasio"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado""
+}
+</json_response>"
+"casa en buin, paine","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Buin"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>"
+Hola! Quiero una casa de 4 dormitorios en Maipú,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 4
+}
+</json_response>","```json
+$json_response = {
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 4,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 4
+}
+</json_response>"
+hasta uf2500,"<json_response>
+{
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+departamento  en providencia,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Providencia""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Providencia""
+}
+</json_response>"
+QUERO UNA CASA EN CONCEPCION,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concepción""
+}
+</json_response>","`<json_response>
+    {
+      ""tipo_inmueble"": ""casa"",
+      ""comuna"": ""concepcion"",
+      ""dormitorios"": null,
+      ""banos"": null,
+      ""precio_min"": null,
+      ""precio_max"": null,
+      ""moneda"": null,
+      ""superficie_min"": null,
+      ""superficie_max"": null,
+      ""estacionamientos"": null,
+      ""bodegas"": null,
+      ""sostenibilidad_certificada"": null,
+      ""con_subsidio"": null,
+      ""piscina"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concepción""
+}
+</json_response>"
+CASA CONCON,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concón""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concon""
+}
+</json_response>"
+casa en la florida,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>"
+Casas en san bernardo,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+"Busco una casa en el cielo, ojalá de color rosa y que vuele con globos de muchos colores. La casa debe tener 20 habitaciones y de 8 pisos, cada piso de un color distinto.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 20
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""El Cielo""
+}
+</json_response>"
+departamento 2 ambientes,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 2,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Departamento en valparaiso,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""valparaiso""
+}
+</json_response>`
+
+```","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+busco depto,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""depto""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+"QUIERO UNA CASA QUE APLIQUE SUBSIDIO HABITACIONAL, TASA, E HIPOTECARIO","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true,
+  ""zona_centros_salud"": null,
+  ""zona_transporte"": null,
+  ""zona_educacion"": null,
+  ""salon_eventos"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"": null,
+  ""bodegas"": null,
+  ""estacionamientos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""superficie_min"":","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>"
+casa de 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""dormitorios"": ""3""
+}
+</json_response>`
+
+Note: Based on the provided `user_input`, only the ""dormitorios"" filter was extracted.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3
+}
+</json_response>"
+casa en La Florida hasta 3.000 Uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+me interesa para empezar que sea en la ciudad de santiago,"<json_response>
+{
+  ""comuna"": ""Santiago""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+Casa en La Florida hasta 5.000 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 5000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""La Florida"",
+        ""precio_max"": ""5000"",
+        ""superficie_max"": ""5000""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 5000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+hola vivienda usada,"<json_response>
+{}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{}
+</json_response>"
+departamento en santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+departamento en santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""departamento"" in user_input:
+                $json_response[filter] = ""departamento""
+            elif ""apartamento"" in user_input:
+                $json_response[filter] = ""apartamento""
+            elif ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+            else:
+                continue
+        elif filter == ""comuna"":
+            if ""santiago"" in user_input:
+                $json_response[filter] = ""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+Como puedo tener mi casa tengo un renta liquida haberes 830.000 y liquido a pagar son de 753.000 más un ahorro de 3.000.000,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": null,
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""precio_min"": 753000,
+        ""precio_max"": 3830000,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,","<json_response>
+{}
+</json_response>"
+Casa en Santiago hasta 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 3000
+}
+
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en renca,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Renca""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if ""renca"" in user_input.lower():
+        if filter == ""comuna"":
+            json_response[filter] = ""renca""
+        elif filter == ""tipo_inmueble"":
+            json_response[filter] = ""casa""
+        elif filter == ""dormitorios"" or filter == ""banos"" or filter == ""superficie_min"" or filter == ""superficie_max"":
+            json_response[filter] = ""n/a""
+        elif filter == ""moneda"":
+            json_response[filter] = ""CLP""
+        elif","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Renca""
+}
+</json_response>"
+Casa en padre hurtado hasta 4000 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Busco casa en Los Andes usada,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Andes""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Andes"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Andes""
+}
+</json_response>"
+necesito casa con subsidio,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>","`<json_response>
+{
+  ""con_subsidio"": true
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>"
+Casas usadas conchali,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Conchalí""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+```
+
+La entrada del usuario no indica explícitamente ningún filtro.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Conchalí""
+}
+</json_response>"
+CASA USADA EN MAIPU,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""comuna"": ""Maipú"",
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>"
+Casas usadas,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+</json_response>
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casas en la pintana,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Pintana""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Pintana""
+}
+</json_response>"
+Casa en Licanray,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Licanray""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Licanray""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Licanray""
+}
+</json_response>"
+Donde puedo buscar viviendas en Quilpué,"<json_response>
+{
+  ""comuna"": ""Quilpué""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""comuna"": ""Quilpué""
+}
+</json_response>"
+casas con subsidio,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>","<json_response>
+{
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true
+}
+</json_response>"
+Casa en peñalolen,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñalolén""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            json_response[filter] = ""casa""
+        elif filter == ""comuna"":
+            json_response[filter] = ""Peñalolen""
+        elif filter == ""dormitorios"":
+            json_response[filter] = ""3""
+        elif filter == ""banos"":
+            json_response[filter] = ""2""
+        elif filter == ""precio_min"":
+            json_response[filter] = ""100000000""
+        elif filter == ""precio_max"":
+            json_response","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñalolén""
+}
+</json_response>"
+Departamento santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","$json_response = {}
+
+while True:
+    try:
+        import re
+        import json
+        from typing import List
+
+        Possible_filters = [""tipo_inmueble"",""comuna"",""dormitorios"",""banos"",""precio_min"",""precio_max"",""moneda"",""superficie_min"",""superficie_max"", ""estacionamientos"",""bodegas"",""sostenibilidad_certificada"",""con_subsidio"",""piscina"",""areas_verdes"",""gimnasio"",""salon_eventos"",""zona_educacion"",""zona_transporte"",""zona_centros_salud""]
+        user_input = ""departamento","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+"asa en los Andes, hasta 2600 ufC","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Andes"",
+  ""precio_max"": 2600,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": null,
+  ""comuna"": null,
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": ""2600"",
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,","<json_response>
+{
+  ""comuna"": ""Los Andes"",
+  ""precio_max"": 2600,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","$json_response = {}
+
+if ""tipo_inmueble"" in user_input.lower():
+    json_response[""tipo_inmueble""] = ""casa""
+if ""comuna"" in user_input.lower():
+    json_response[""comuna""] = user_input.lower().split(""de"")[-1]
+if ""dormitorios"" in user_input.lower():
+    json_response[""dormitorios""] = int(user_input.lower().split(""dormitorios"")[1].split(""de"")[0])
+if ""banos"" in user_input.lower():
+    json_response[""banos""] = int(user_input.lower().split(""banos","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa en la serena o Coquimbo con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena"",
+  ""dormitorios"": 3
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""casa"" in user_input.lower():
+                $json_response[filter] = ""casa""
+            elif ""apartamento"" in user_input.lower():
+                $json_response[filter] = ""apartamento""
+            else:
+                $json_response[filter] = ""otro""
+        elif filter == ""comuna"":
+            if ""coquimbo"" in user_input.lower():
+                $json_response[filter] = ""coquimbo""
+            else:","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casa puerto Montt,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt""
+}
+</json_response>"
+Central sur 210,"<json_response>
+{
+  ""comuna"": ""Central Sur""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Central Sur""
+}
+</json_response>"
+Departamento hasta 2000 uf en temuco,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Temuco"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""temuco"",
+  ""superficie_min"": 2000
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Temuco"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en san bernardo,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""san bernardo""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>"
+Departamento 2 dormitorios 2 baños en comuna el bosque,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""El Bosque"",
+  ""dormitorios"": 2,
+  ""banos"": 2
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 2,
+  ""banos"": 2,
+  ""comuna"": ""el bosque""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""El Bosque"",
+  ""dormitorios"": 2,
+  ""banos"": 2
+}
+</json_response>"
+Necesito departamento en con con,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""comuna"": null,
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""areas_verdes","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Concepción""
+}
+</json_response>"
+estoy buscando una casa en los andes entre 2000 y 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Andes"",
+  ""precio_min"": 2000,
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Andes"",
+  ""precio_min"": 2000,
+  ""precio_max"": 3000
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_min"": 2000,
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa en la florida,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>"
+quiero una casa en santiago con piscina,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""piscina"": true
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""piscina"": true
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago"",
+  ""piscina"": true
+}
+</json_response>"
+Casa en talagante,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Talagante""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Talagante""
+}
+</json_response>"
+Hola busco casa grande en lo posible en la comuna de la cisterna o san miguel,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>","`<json_response>`
+
+`""tipo_inmueble"": ""casa"", ""comuna"": [""la cisterna"", ""san miguel""], ""precio_min"": null, ""precio_max"": null, ""moneda"": null, ""superficie_min"": null, ""superficie_max"": null, ""estacionamientos"": null, ""bodegas"": null, ""sostenibilidad_certificada"": null, ""con_subsidio"": null, ""piscina"": null, ""areas_verdes"": null, ""gimnasio"": null, ""salon_eventos"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>"
+casa maipu,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>"
+Casas san bernardo hasta 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{""tipo_inmueble"": ""casa"", ""comuna"": ""San Bernardo"", ""precio_max"": 3000, ""superficie_max"": ""3000"", ""moneda"": ""uf""}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Hola quiero tener mi casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa en Quinta Normal,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quinta Normal""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+            elif ""apartamento"" in user_input:
+                $json_response[filter] = ""apartamento""
+            else:
+                $json_response[filter] = ""otro""
+        elif filter == ""comuna"":
+            if ""Quinta Normal"" in user_input:
+                $json_response[filter] = ""Quinta Normal""
+            else:
+                $json_response[","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quinta Normal""
+}
+</json_response>"
+Casa en Puerto Varas,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Varas""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Puerto Varas""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Varas""
+}
+</json_response>"
+depto un dormitorio cerca del metro de menus de uf2100,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 1,
+  ""zona_transporte"": true,
+  ""precio_max"": 2100,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""depto"",
+    ""dormitorios"": ""1"",
+    ""comuna"": ""cercano al metro de Menús de UFA 2100"",
+    ""precio_min"": ""0"",
+    ""precio_max"": ""0"",
+    ""moneda"": ""CLP"",
+    ""superficie_min"": ""0"",
+    ""superficie_max"": ""0"",
+    ""estacionamientos"": ""0"",
+    ""bodegas"": ""0"",
+    ""sostenibilidad_certificada"": ""0"",
+    ""con_subsid","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 1,
+  ""precio_max"": 2100,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa Maipú,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Maipú""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>"
+"hola, busco casa en antofagasta","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+}
+```
+
+La entrada del usuario solo menciona una ubicación (Antofagasta), pero no especifica ningún filtro específico para el tipo de inmueble, comuna, número de dormitorios, baños, precio, superficie, estacionamientos, bodegas, sostenibilidad certificada, subsidio, piscina, áreas verdes, gimnasio, salon eventos, zona educación o zona transporte. Por lo tanto, devuelve un objeto vacío.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+Casa en Curauma hasta 2500 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Curauma"",
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Curauma"",
+  ""precio_max"": 2500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Departamento Quillota,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Quillota""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Quillota""
+}
+</json_response>"
+filtra propiedades solo region metropolitana,"<json_response>
+{
+  ""comuna"": ""Región Metropolitana""
+}
+</json_response>","<json_response>
+  {
+    ""comuna"": ""Metropolitana"",
+    ""zona_educacion"": ""Metropolitana"",
+    ""zona_transporte"": ""Metropolitana"",
+    ""zona_centros_salud"": ""Metropolitana""
+  }
+</json_response>","<json_response>
+{
+  ""comuna"": ""Región Metropolitana""
+}
+</json_response>"
+departamento en las condes,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>"
+propiedades en valparaiso,"<json_response>
+{
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""propiedades"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>`
+
+Nota: Se dedujo que el usuario estaba buscando propiedades en la comuna de Valparaíso. Sin embargo, no se encontraron otros filtros específicos en el usuario.","<json_response>
+{
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+Departamento en la serena,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Serena""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Serena""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Serena""
+}
+</json_response>"
+Casa de 1.700 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 1700,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""superficie_min"": 1700
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 1700,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en Puente alto,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Puente Alto"",
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""areas_verdes"": null,
+        ""gimnasio"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>"
+casa en puyehue,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puyehue""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Puyehue""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puyehue""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+"Busco departamento usado en Ñuñoa, cerca a metro Ñuñoa o Chile España por máximo 3.700 UF","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""precio_max"": 3700,
+  ""moneda"": ""UF"",
+  ""zona_transporte"": true
+}
+</json_response>","`<json_response>`
+
+`""tipo_inmueble"": ""departamento"", 
+
+""comuna"": ""Ñuñoa"", 
+
+""precio_max"": 3700, 
+
+""moneda"": ""UF"", 
+
+""superficie_min"": null, 
+
+""superficie_max"": null, 
+
+""estacionamientos"": null, 
+
+""bodegas"": null, 
+
+""sostenibilidad_certificada"": null, 
+
+""con_subsidio"": null, 
+
+""piscina"": null, 
+
+""areas_verdes"": null, 
+
+""gimnasio"": null, 
+
+""salon_eventos","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""precio_max"": 3700,
+  ""moneda"": ""UF""
+}
+</json_response>"
+busco una casa cerca de la universidad de chile,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""zona_educacion"": true
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""comuna"": ""Santiago"",
+  ""zona_educacion"": ""universidad de Chile""
+}
+</json_response>
+```
+
+Nota: Inferí que el usuario buscaba una casa cerca de la Universidad de Chile, que se encuentra en la comuna de Santiago.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""zona_educacion"": true
+}
+</json_response>"
+Una casa en Labranza,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Labranza""
+}
+</json_response>","<json_response>
+    {}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Labranza""
+}
+</json_response>"
+casa en puente alto,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto""
+}
+</json_response>"
+departamento,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+Depto san Miguel hasta 4000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Miguel"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""depto"",
+  ""comuna"": ""San Miguel"",
+  ""precio_max"": ""4000""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Miguel"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+departamento en Santo Domingo,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santo Domingo""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamento"",
+    ""comuna"": ""Santiago"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+hola departamentos cerrillos,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Cerrillos""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamentos"",
+    ""comuna"": ""Cerrillos""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Cerrillos""
+}
+</json_response>"
+Casa de  1 piso von patio 2 dormitorios baño cocina y mucho patio,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2,
+  ""banos"": 1
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": null,
+  ""dormitorios"": ""2"",
+  ""banos"": ""1"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2,
+  ""banos"": 1
+}
+</json_response>"
+Quiero solicitar un crédito para financiar un terreno,"<json_response>
+{}
+</json_response>",`<json_response></json_response>`,"<json_response>
+{}
+</json_response>"
+"hola, tengo una vivienda nueva que quiero hipotecar para un proyecto, cómo lo puedo hacer?","<json_response>
+{}
+</json_response>","`<json_response>`
+
+```json
+{}
+</json_response>```
+
+El `user_input` no menciona ninguna de las opciones de filtro disponibles.","<json_response>
+{}
+</json_response>"
+Me interesa casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+estoy buscando casa en comuna de las condes por menos de 10.000,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes"",
+  ""precio_max"": 10000
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes"",
+  ""precio_min"": 10000
+}
+
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes"",
+  ""precio_max"": 10000
+}
+</json_response>"
+"parcela con casa en colina, sector liray o santa marta de liray","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Colina""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casas"",
+  ""comuna"": ""Colina"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Colina""
+}
+</json_response>"
+"Hola ! Estoy buscando una casa para arrendar en puente alto, de unos 650 mil pesos mensuales","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto"",
+  ""precio_max"": 650000,
+  ""moneda"": ""CLP""
+}
+</json_response>","```json
+<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Puente Alto"",
+    ""precio_min"": 650000,
+    ""moneda"": ""pesos chilenos""
+  }
+</json_response>
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto"",
+  ""precio_max"": 650000,
+  ""moneda"": ""CLP""
+}
+</json_response>"
+Filtra por región valparaiso,"<json_response>
+{
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""comuna"": ""Valparaíso""
+}
+```","<json_response>
+{
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+"hola, busco sasa en chillan 3 dormitorios 2 baños","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Chillán"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""dormitorios"",
+  ""dormitorios"": ""3"",
+  ""banos"": ""2""
+}
+</json_response>","<json_response>
+{
+  ""comuna"": ""Chillán"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>"
+hola casa usada,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa en peñalolen con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñalolén"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>`
+
+`""tipo_inmueble"": ""casa"", ""dormitorios"": 3,`
+
+`</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñalolén"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Busca casa en temuco,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>","$json_response = {}
+ 
+for filter in Possible_filters:
+    if ""comuna"" in user_input.lower() and filter == ""comuna"":
+        json_response[filter] = ""Temuco""
+    elif ""precio_min"" in user_input.lower() and filter == ""precio_min"":
+        pass  # no value provided
+    elif ""precio_max"" in user_input.lower() and filter == ""precio_max"":
+        pass  # no value provided
+    elif ""tipo_inmueble"" in user_input.lower() and filter == ""tipo_inmueble"":
+        pass  # no value provided
+    elif ""dormitor","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+Casa en meñipill,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Meñipill""
+}
+</json_response>"
+Busco departamento,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+Casa en Punta Arenas  3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Punta Arenas"",
+  ""dormitorios"": 3
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Punta Arenas"",
+  ""dormitorios"": 3
+}
+</json_response>"
+"Hola , requiero en departamento en san Miguel","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Miguel""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""comuna"": ""San Miguel"",
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Miguel""
+}
+</json_response>"
+Casa en comuna quillota,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Quillota""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota""
+}
+</json_response>"
+estoy buscando casa en copiapó,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Copiapó""
+}
+</json_response>","`<json_response>`
+
+`{`
+
+`""tipo_inmueble"": ""casa"",`
+
+`""comuna"": ""Copiapó"",`
+
+`""dormitorios"": null,`
+
+`""banos"": null,`
+
+`""precio_min"": null,`
+
+`""precio_max"": null,`
+
+`""moneda"": null,`
+
+`""superficie_min"": null,`
+
+`""superficie_max"": null,`
+
+`""estacionamientos"": null,`
+
+`""bodegas"": null,`
+
+`""sostenibilidad_certificada"": null,`
+
+`""con_sub","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Copiapó""
+}
+</json_response>"
+departamento,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+Casa en curacautin,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Curacautín""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Curacautin""
+}
+</json_response>"
+casa en puerto montt con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt"",
+  ""dormitorios"": 3
+}
+</json_response>`
+
+Esta es la respuesta porque el usuario solicitó un ""casa en puerto montt con 3 dormitorios"".","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casa en la serena hasta 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": ""3000"",
+  ""comuna"": ""La Serena""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa Quilicura,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quilicura""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quilicura""
+}
+</json_response>"
+Casa hasta 3000 uf en región metropolitana,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región Metropolitana"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""región metropolitana"",
+  ""precio_max"": ""3000""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región Metropolitana"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa en buin,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Buin""
+}
+</json_response>"
+Casa en temuco 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 3
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+            else:
+                $json_response[filter] = ""apartamento""
+        elif filter == ""comuna"":
+            if ""temuco"" in user_input:
+                $json_response[filter] = ""temuco""
+            else:
+                $json_response[filter] = ""Santiago""
+        elif filter == ""dormitorios"":
+            $json_response[filter] =","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 3
+}
+</json_response>"
+"departamento dos baños y dos habitaciones, con estacionamiento en la comuna de maipu","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 2,
+  ""banos"": 2,
+  ""estacionamientos"": 1
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 2,
+  ""banos"": 2,
+  ""estacionamientos"": true,
+  ""comuna"": ""Maipu""
+}
+</json_response>`
+```
+
+Justificativa:
+- El usuario pide un departamento.
+- El usuario pide dos habitaciones.
+- El usuario pide dos baños.
+- El usuario pide estacionamiento.
+- El usuario pide la comuna de Maipu.","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Maipú"",
+  ""banos"": 2,
+  ""dormitorios"": 2,
+  ""estacionamientos"": 1
+}
+</json_response>"
+busco departamento en la playa,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamento"",
+    ""comuna"": null,
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+Casa Pudahuel,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pudahuel""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pudahuel""
+}
+</json_response>"
+Casa comuna el bosque,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""El Bosque""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            user_input = user_input.replace(filter, ""casa"")
+        if filter == ""comuna"":
+            user_input = user_input.replace(filter, ""el bosque"")
+        else:
+            $json_response[filter] = user_input
+
+print(json.dumps($json_response, indent=4))","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""El Bosque""
+}
+</json_response>"
+muestrame casas y departamentos nuevos y usados en la cisterna y san migule,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa, departamento"",
+  ""comuna"": ""cisterna, san miguel"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Cisterna""
+}
+</json_response>"
+busco algo en osorno,"<json_response>
+{
+  ""comuna"": ""Osorno""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Osorno""
+}
+</json_response>"
+Casa en chañaral hasta 2000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Chañaral"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Chañaral"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa cerro navia,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Cerro Navia""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if ""cerro"" in user_input.lower() or ""navia"" in user_input.lower():
+        if filter == ""comuna"":
+            json_response[filter] = ""Cerro Navia""
+        elif filter == ""tipo_inmueble"":
+            json_response[filter] = ""casa""
+        else:
+            json_response[filter] = True
+
+print(json_response)","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Cerro Navia""
+}
+</json_response>"
+Casas en peñaflor. 2 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñaflor"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2,
+  ""comuna"": ""Peñaflor""
+}
+
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Peñaflor"",
+  ""dormitorios"": 2
+}
+</json_response>"
+"Antofagasta, departamento 3 habitaciones 1 baño","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Antofagasta"",
+  ""dormitorios"": 3,
+  ""banos"": 1
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""departamento"" in user_input:
+                $json_response[filter] = ""apartamento""
+            elif ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+            elif ""casa"" in user_input and ""departamento"" in user_input:
+                $json_response[filter] = ""ambos""
+        elif filter == ""comuna"":
+            if ""antofagasta"" in user_input:
+                $json_response[filter","<json_response>
+{
+  ""comuna"": ""Antofagasta"",
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 3,
+  ""banos"": 1
+}
+</json_response>"
+casa en concon,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concón""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Concon""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concon""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa en Puente alto hasta 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+{""tipo_inmueble"":""casa"",""precio_max"":""3000""}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Departamento de 1600 uf en pto varas,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Puerto Varas"",
+  ""precio_max"": 1600,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""pto varas"",
+  ""superficie_min"": 1600
+}
+</json_response>
+```
+
+I inferred the following filters from the user's input:
+- `tipo_inmueble` was clearly requested as ""departamento"" (Chilean Spanish for ""apartment"").
+- `comuna` was clearly requested as ""pto varas"", which I interpreted as the commune of Pto. Varas.
+- `superficie_min` was clearly requested as ""1600 uf"",","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Puerto Varas"",
+  ""precio_max"": 1600,
+  ""moneda"": ""UF""
+}
+</json_response>"
+busco casa en la quinta region,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quinta Región""
+}
+</json_response>"
+Casa en bulnes,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Bulnes""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+            else:
+                $json_response[filter] = ""apartamento""
+        elif filter == ""comuna"":
+            if ""bulnes"" in user_input.lower():
+                $json_response[filter] = ""bulnes""
+            else:
+                $json_response[filter] = ""Santiago""
+        elif filter == ""dormitorios"":
+            if ""3"" in user","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Bulnes""
+}
+</json_response>"
+casa en litoral central quisco,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quisco""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Quisco"",
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quisco""
+}
+</json_response>"
+Departamento en san Miguel 3 piezas,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Miguel"",
+  ""dormitorios"": 3
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamento"",
+    ""comuna"": ""san miguel"",
+    ""dormitorios"": 3,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Miguel"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Quiero simular hipotecario,"<json_response>
+{}
+</json_response>","`<json_response>`
+
+`""tipo_inmueble"": ""hipotecario"",`
+
+`""comuna"": null,`
+
+`""dormitorios"": null,`
+
+`""banos"": null,`
+
+`""precio_min"": null,`
+
+`""precio_max"": null,`
+
+`""moneda"": null,`
+
+`""superficie_min"": null,`
+
+`""superficie_max"": null,`
+
+`""estacionamientos"": null,`
+
+`""bodegas"": null,`
+
+`""sostenibilidad_certificada"": null,`
+
+`""con_subsidio"": null,","<json_response>
+{}
+</json_response>"
+Casa en Ñuñoa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Ñuñoa""
+}
+</json_response>","$json_response = {}
+for filter in Possible_filters:
+    if ""ñ"" in filter:
+        if filter == ""ñuñoa"":
+            if ""comuna"" in user_input:
+                $json_response[filter] = ""Ñuñoa""
+            else:
+                continue
+        else:
+            continue
+    else:
+        if filter in user_input:
+            $json_response[filter] = user_input.split()[0].capitalize() + filter","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Ñuñoa""
+}
+</json_response>"
+casas maule,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maule""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maule""
+}
+</json_response>"
+quiero una casa con 3 habitaciones y dos baños y patio,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"": null,
+  ""salon_eventos"": null,
+  ""zona_educ","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>"
+Casa. Arica,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Arica""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            user_input = user_input.lower()
+            if ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+        elif filter == ""comuna"":
+            user_input = user_input.lower()
+            if ""arica"" in user_input:
+                $json_response[filter] = ""arica""
+        elif filter == ""precio_min"":
+            user_input = user_input.lower()
+            if ""$"" in user_input:
+                $json_response[filter] = user","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Arica""
+}
+</json_response>"
+la florida 4 dormitorios,"<json_response>
+{
+  ""comuna"": ""La Florida"",
+  ""dormitorios"": 4
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""dormitorios"",
+    ""dormitorios"": 4
+  }
+</json_response>","<json_response>
+{
+  ""comuna"": ""La Florida"",
+  ""dormitorios"": 4
+}
+</json_response>"
+casas en quillota,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota""
+}
+</json_response>","<json_response>
+  </json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota""
+}
+</json_response>"
+casa en las condes,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>","<json_response>
+{}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>"
+hola para comprar una vivienda nueva con el 10 de garantia,"<json_response>
+{}
+</json_response>","`<json_response>`
+
+`
+
+`
+
+</json_response>`","<json_response>
+{}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+quiero comprar una casa en la quinta region de preferencia en quillota o la cruz,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota""
+}
+</json_response>","`<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Quillota o La Cruz""
+    }
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota""
+}
+</json_response>"
+un sitio en los angeles para construir una casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Ángeles""
+}
+</json_response>",`<json_response></json_response>`,"<json_response>
+{
+  ""comuna"": ""Los Ángeles""
+}
+</json_response>"
+Necesito una casa en la florida,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Florida""
+}
+</json_response>"
+departamento en santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","<json_response>
+  {}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa usada,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casa en temuco de 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 3
+}
+</json_response>","$json_response = {}
+ 
+for filter in Possible_filters:
+    if filter == ""tipo_inmueble"" and ""casa"" in user_input.lower():
+        $json_response[filter] = ""casa""
+    elif filter == ""dormitorios"" and ""3"" in user_input:
+        $json_response[filter] = ""3""
+ 
+return ""<json_response>"" + str($json_response) + ""</json_response>""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casa en region valparaiso,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""Valparaíso"",
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""areas_verdes"": null,
+        ""gimnasio"": null,","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+Venta de casa en la serena,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena""
+}
+</json_response>",`<json_response></json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""La Serena""
+}
+</json_response>"
+Casa por ñuñoa por ese monto,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Ñuñoa""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Ñuñoa"",
+  ""precio_min"": ""ese monto""
+}
+</json_response>
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Ñuñoa""
+}
+</json_response>"
+casas o departamentos en la region de la araucania,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Araucanía""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casas o departamentos"",
+  ""comuna"": ""la araucania"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Araucanía""
+}
+</json_response>"
+casa en puente alto hasta 3000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": ""3000"",
+  ""comuna"": ""Puente Alto""
+}
+
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puente Alto"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en San Bernardo,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>"
+"hola mi nombre es Oneimer Coronado, quisiera cotizar un dpto de unas dos habitaciones","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": 2
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""apartamento"",
+  ""dormitorios"": ""2""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 2
+}
+</json_response>"
+deptos en concepcion o viña,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Concepción""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": null,
+        ""comuna"": ""Concepción, Viña del Mar"",
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Concepción""
+}
+</json_response>"
+Casa en las condes,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Las Condes""
+}
+</json_response>"
+Proyectos en Quillota vivi,"<json_response>
+{
+  ""comuna"": ""Quillota""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": null,
+  ""comuna"": ""Quillota"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,","<json_response>
+{
+  ""comuna"": ""Quillota""
+}
+</json_response>"
+casa en antofagasta,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","<json_response>
+{
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+"Departamento en renca, pertenezco al 40% del registro social","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Renca"",
+  ""con_subsidio"": true
+}
+</json_response>","`<json_response>`
+
+`
+
+`
+
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Renca"",
+  ""con_subsidio"": true
+}
+</json_response>"
+Casa en Maipú hasta 2100 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""precio_max"": 2100,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{""tipo_inmueble"": ""casa"", ""comuna"": ""Maipú"", ""precio_max"": ""2100"", ""moneda"": ""UF"", ""superficie_min"": null, ""superficie_max"": null, ""estacionamientos"": null, ""bodegas"": null, ""sostenibilidad_certificada"": null, ""con_subsidio"": null, ""piscina"": null, ""areas_verdes"": null, ""gimnasio"": null, ""salon_eventos"": null, ""zona_educacion"": null, ""z","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""precio_max"": 2100,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Tienes casas colina,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Colina""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casas"",
+  ""comuna"": ""colina""
+}
+</json_response>`
+
+Nota: El usuario solicitó ""colina"" en lugar de ""comuna"", por lo que he inferido el valor más probable.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Colina""
+}
+</json_response>"
+departamento providencia,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Providencia""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamento"",
+    ""comuna"": ""Providencia"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Providencia""
+}
+</json_response>"
+"departamento en Santiago Centro o Ñuñoa, de tres dormitorios","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago Centro o Ñuñoa"",
+  ""dormitorios"": 3
+}
+
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago Centro"",
+  ""dormitorios"": 3
+}
+</json_response>"
+casa san bernando,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>"
+busco departamento o casa usada en la comuna de san bernardo,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento o casa"",
+        ""comuna"": ""San Bernardo""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>"
+comprar un departamento,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento""
+}
+</json_response>"
+"Casa en sexta región, San Vicente de tagua tagua, peumo, las cabras","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Vicente de Tagua Tagua""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Vicente de Tagua Tagua"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"":","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Vicente de Tagua Tagua""
+}
+</json_response>"
+Deseo una casa en maipú con ds19,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": ""1"",
+  ""banos"": ""1"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""con_subsidio"": true
+}
+</json_response>"
+Casas en viña del mar,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+```
+
+`</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>"
+Casa en Quillota con 3 do,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota"",
+  ""dormitorios"": 3
+}
+</json_response>","$json_response = {}
+ 
+for filter in Possible_filters:
+    if ""do"" in user_input.lower() and filter == ""dormitorios"":
+        json_response[filter] = 3
+        break
+    elif ""dormitorios"" in user_input.lower() and filter == ""dormitorios"":
+        json_response[filter] = 3
+        break
+    elif ""3"" in user_input.lower() and filter == ""dormitorios"":
+        json_response[filter] = 3
+        break
+    elif ""tres"" in user_input.lower() and filter == ""dormitorios","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Quillota"",
+  ""dormitorios"": 3
+}
+</json_response>"
+CASA EN LAMPA DE HASTA 4000 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Lampa"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": ""4000"",
+  ""superficie_max"": ""4000""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Lampa"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en concon,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concón""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Concón""
+}
+</json_response>"
+un departamento en la reina con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Reina"",
+  ""dormitorios"": 3
+}
+</json_response>","<json_response>
+{""tipo_inmueble"": ""departamento"", ""dormitorios"": 3}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Reina"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+    {}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Estancia norte Quilicura,"<json_response>
+{
+  ""comuna"": ""Quilicura""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+}
+```
+
+No filters were found in the user's input.","<json_response>
+{
+  ""tipo_inmueble"": ""estancia"",
+  ""comuna"": ""Quilicura""
+}
+</json_response>"
+casa maipu,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú""
+}
+</json_response>"
+Casas Puerto Montt,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Montt""
+}
+</json_response>"
+"Tres pisos  , casa individual, 3 dormitorios , dos baños","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>"
+necesito opciones en punta arenas,"<json_response>
+{
+  ""comuna"": ""Punta Arenas""
+}
+</json_response>","`<json_response>`
+
+`""tipo_inmueble"": ""apartamento"",`
+
+`""comuna"": ""Santiago"",`
+
+`""dormitorios"": ""3"",`
+
+`""banos"": ""2"",`
+
+`""precio_min"": ""10000000"",`
+
+`""precio_max"": ""50000000"",`
+
+`""moneda"": ""pesos chilenos"",`
+
+`""superficie_min"": ""60"",`
+
+`""superficie_max"": ""150"",`
+
+`""estacionamientos"": ""2"",`
+
+`""bodegas"": ""1"",`
+
+`""","<json_response>
+{
+  ""comuna"": ""Punta Arenas""
+}
+</json_response>"
+"departamento en ñuñoa, precio hasta UF4.000","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""precio_max"": ""UF4.000""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""precio_max"": 4000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+casa pequña,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+"Casa, en temuco","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""temuco""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+en la novena region busco,"<json_response>
+{
+  ""comuna"": ""Los Lagos""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": null,
+    ""comuna"": null,
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes"": null","<json_response>
+{
+  ""comuna"": ""La Región de la Novena""
+}
+</json_response>"
+Casas en calama,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Calama""
+}
+</json_response>",`<json_response></json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Calama""
+}
+</json_response>"
+"departamento, san pedro de la paz","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Pedro de la Paz""
+}
+</json_response>","`<json_response>`
+
+`{""tipo_inmueble"": ""departamento"", ""comuna"": ""San Pedro de la Paz""}`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Pedro de la Paz""
+}
+</json_response>"
+"departamento cerca del metro con al menos 2 habitaciones, areas verdes y pet friendly","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""zona_transporte"": true,
+  ""dormitorios"": 2,
+  ""areas_verdes"": true
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""cercano al metro"",
+  ""dormitorios"": ""2"",
+  ""superficie_min"": ""no especificado"",
+  ""superficie_max"": ""no especificado"",
+  ""estacionamientos"": ""no especificado"",
+  ""bodegas"": ""no especificado"",
+  ""sostenibilidad_certificada"": ""no especificado"",
+  ""con_subsidio"": ""no especificado"",
+  ""piscina"": ""no especificado"",
+  ""areas_verdes"":","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Cerca del metro"",
+  ""dormitorios"": 2,
+  ""areas_verdes"": true,
+  ""piscina"": true
+}
+</json_response>"
+Casa en puerto varas hasta 1.500 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Varas"",
+  ""precio_max"": 1500,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Varas"",
+  ""precio_max"": ""1500"",
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes"": null,
+  ""gimnasio"": null,
+  ""salon_eventos"": null,
+  ""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Puerto Varas"",
+  ""precio_max"": 1500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+departamento en Iquique,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Iquique""
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Iquique""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Iquique""
+}
+</json_response>"
+Casa en la region de valparaiso,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""valparaiso""
+}
+</json_response>
+```
+
+Justificativa: En el mensaje del usuario se solicita una casa en la región de Valparaíso. Por lo tanto, se agregaron los filtros correspondientes.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>"
+hola reserva de Machalí,"<json_response>
+{
+  ""comuna"": ""Machalí""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""comuna"": ""Machalí""
+}
+</json_response>"
+casa en punta arenas,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Punta Arenas""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Punta Arenas""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Punta Arenas""
+}
+</json_response>"
+busco deparatamento en santiago centro de 1 dormitorio,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 1
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 1
+}
+</json_response>
+```
+
+Nota: He utilizado el término ""departamento"" en lugar de ""apartamento"" debido a la posibilidad de que el usuario haya utilizado un término informal.","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago Centro"",
+  ""dormitorios"": 1
+}
+</json_response>"
+Como lo puedo ser pa. Una casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Casas en Temuco,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+            else:
+                $json_response[filter] = ""apartamento""
+        elif filter == ""comuna"":
+            if ""Temuco"" in user_input:
+                $json_response[filter] = ""Temuco""
+        elif filter == ""dormitorios"":
+            if ""2"" in user_input:
+                $json_response[filter] = 2
+        elif filter","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+casa en huechuraba hasta 5.900 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Huechuraba"",
+  ""precio_max"": 5900,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""precio_max"": ""5,900"",
+    ""comuna"": ""Huechuraba""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Huechuraba"",
+  ""precio_max"": 5900,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casas en temuco,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""Temuco"",
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes"": null,
+    ""gimnasio"": null,
+    ""","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Temuco""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+    {}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Comprar un terreno,"<json_response>
+{}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{}
+</json_response>"
+casa con dos dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""dormitorios"": ""2""
+}
+</json_response>`
+
+This is the extracted filter. The user is clearly asking for a property with 2 bedrooms.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 2
+}
+</json_response>"
+"Hola Vivi , me gustaria una casa en coquimbo 3 dormitorios","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Coquimbo"",
+  ""dormitorios"": 3
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""coquimbo"",
+  ""dormitorios"": 3
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Coquimbo"",
+  ""dormitorios"": 3
+}
+</json_response>"
+hola ¡ me gustaria saber la direccion de este proyecto en ñuñoa de 3679 uf,"<json_response>
+{
+  ""comuna"": ""Ñuñoa"",
+  ""precio_max"": 3679,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": null,
+  ""comuna"": ""Ñuñoa"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null","<json_response>
+{
+  ""comuna"": ""Ñuñoa""
+}
+</json_response>"
+Casas en Maipú 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""comuna"": ""Maipú"",
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Maipú"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casa osorno,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Osorno""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Osorno""
+}
+</json_response>"
+departamento en santiago de 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 3
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""dormitorios"": 3,
+        ""comuna"": ""Santiago de""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago"",
+  ""dormitorios"": 3
+}
+</json_response>"
+departamentos en viña del mar,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Viña del Mar""
+}
+</json_response>"
+Ptopiedad en santiago,"<json_response>
+{
+  ""comuna"": ""Santiago""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": null,
+    ""comuna"": ""Santiago"",
+    ""dormitorios"": null,
+    ""banos"": null,
+    ""precio_min"": null,
+    ""precio_max"": null,
+    ""moneda"": null,
+    ""superficie_min"": null,
+    ""superficie_max"": null,
+    ""estacionamientos"": null,
+    ""bodegas"": null,
+    ""sostenibilidad_certificada"": null,
+    ""con_subsidio"": null,
+    ""piscina"": null,
+    ""areas_verdes","<json_response>
+{
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+2.200 uf region metropolitana,"<json_response>
+{
+  ""comuna"": ""Región Metropolitana"",
+  ""precio_max"": 2200,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": null,
+        ""comuna"": ""region metropolitana"",
+        ""dormitorios"": null,
+        ""banos"": null,
+        ""precio_min"": null,
+        ""precio_max"": null,
+        ""moneda"": null,
+        ""superficie_min"": null,
+        ""superficie_max"": null,
+        ""estacionamientos"": null,
+        ""bodegas"": null,
+        ""sostenibilidad_certificada"": null,
+        ""con_subsidio"": null,
+        ""piscina"": null,
+        ""","<json_response>
+{
+  ""precio_max"": 2200,
+  ""moneda"": ""UF"",
+  ""comuna"": ""Región Metropolitana""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+"Hola, busco casa con patio aunque sea usada dentro de la octava región.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Los Lagos""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""casa"",
+    ""comuna"": ""octava región""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Octava Región""
+}
+</json_response>"
+Casa de hasta 2000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": ""2000""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+tengo un pie de $14.000.000  y un sueldo de $850.000,"<json_response>
+{}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": null,
+  ""comuna"": null,
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": 14000000,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,","<json_response>
+{}
+</json_response>"
+casa 3 dormitorios 2 baños,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3,
+  ""banos"": 2
+}
+</json_response>"
+hola busco departamento san bernardo,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""comuna"": ""San Bernardo""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Bernardo""
+}
+</json_response>"
+en valdivia hay propiedades,"<json_response>
+{
+  ""comuna"": ""Valdivia""
+}
+</json_response>","<json_response>
+  {}
+</json_response>","<json_response>
+{
+  ""comuna"": ""Valdivia""
+}
+</json_response>"
+Casa STGO centro,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""centro""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Stgo""
+}
+</json_response>"
+departamento santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+Casa en la región metropolitana,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región Metropolitana""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""casa"",
+        ""comuna"": ""región metropolitana""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Región Metropolitana""
+}
+</json_response>"
+departamento 2 o 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": [
+    2,
+    3
+  ]
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""dormitorios"": [""2"", ""3""]
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""dormitorios"": [
+    2,
+    3
+  ]
+}
+</json_response>"
+Quiero alguna casa en la 5ta region,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valparaíso""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""5ta region""
+}
+</json_response>`
+```
+
+Nota: He inferido que el usuario quiere una casa en la Región de los Lagos, que es la 5ta región de Chile.","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""5ta region""
+}
+</json_response>"
+busco casa usada,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+Propiedades quinta region,"<json_response>
+{
+  ""comuna"": ""Quinta Región""
+}
+</json_response>","$json_response = {}
+
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            json_response[filter] = ""quinta""
+        elif filter == ""comuna"":
+            json_response[filter] = ""Región""
+        elif filter == ""dormitorios"":
+            json_response[filter] = ""3""
+        elif filter == ""banos"":
+            json_response[filter] = ""3""
+        elif filter == ""precio_min"":
+            json_response[filter] = ""50000000""
+        elif filter == ""precio_max"":
+            json_response[filter","<json_response>
+{
+  ""comuna"": ""Quinta Región""
+}
+</json_response>"
+Puedo adquirir una vivienda usada en noviembre del próximo año,"<json_response>
+{}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""vivienda"",
+  ""comuna"": null,
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,","<json_response>
+{}
+</json_response>"
+Departamento en pucon con dos dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Pucon"",
+  ""dormitorios"": 2
+}
+</json_response>","`<json_response>
+{
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Pucon"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Departamento santiago,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>","<json_response>
+    {
+        ""tipo_inmueble"": ""departamento"",
+        ""comuna"": ""santiago""
+    }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Santiago""
+}
+</json_response>"
+inmobiliaria baluarte,"<json_response>
+{}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""baluarte"",
+  ""comuna"": null,
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"": null,
+  ""areas_verdes","<json_response>
+{
+  ""comuna"": ""Baluarte""
+}
+</json_response>"
+hola casas usadas en salesianos en san miguel,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Miguel"",
+  ""zona_educacion"": true
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casas"",
+  ""comuna"": ""Salesianos"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"":","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""San Miguel""
+}
+</json_response>"
+"Hola! Busco un departamento de entre dos y tres habitaciones, con estacionamiento, en Ñuñoa, Providencia o Las Condes. Ojalá cercano a Línea 1 o 3 del Metro","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""dormitorios"": [
+    2,
+    3
+  ],
+  ""zona_transporte"": true
+}
+</json_response>","```json
+$json_response = {
+  ""tipo_inmueble"": [""2-3 habitaciones""],
+  ""comuna"": [""Ñuñoa"", ""Providencia"", ""Las Condes""],
+  ""estacionamientos"": ""sí"",
+  ""zona_transporte"": [""Línea 1"", ""Línea 3""]
+}
+```
+
+Nota: He inferido que el usuario está buscando un departamento de 2-3 habitaciones, con estacionamiento y cerca de líneas 1 o 3 del Metro en las comunas de Ñuñoa, Providencia o Las Con","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""Ñuñoa"",
+  ""dormitorios"": [
+    2,
+    3
+  ],
+  ""estacionamientos"": 1
+}
+</json_response>"
+Casa en coquimbo con 3 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Coquimbo"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Coquimbo"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casas usadas,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+CASA EN TALCA CON 2 DORMITORIOS O MAS,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Talca"",
+  ""dormitorios"": [
+    2,
+    null
+  ]
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casas"",
+  ""dormitorios"": ""2 o mas""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Talca"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Vivienda en antof,"<json_response>
+{
+  ""comuna"": ""Antofagasta""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""vivienda"",
+    ""comuna"": ""Antofagasta""
+  }
+</json_response>","<json_response>
+{
+  ""comuna"": ""Antofagasta""
+}
+</json_response>"
+Propiedades en San Carlos ñuble,"<json_response>
+{
+  ""comuna"": ""San Carlos""
+}
+</json_response>","`<json_response>`
+
+```json
+{}
+```
+
+`</json_response>`","<json_response>
+{
+  ""comuna"": ""San Carlos""
+}
+</json_response>"
+Casa en Pudahuel,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pudahuel""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pudahuel""
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pudahuel""
+}
+</json_response>"
+casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+casa padre hurtado,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Padre Hurtado""
+}
+</json_response>"
+Casa usana en la comuna de recoleta,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Recoleta""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""recoleta""
+}
+</json_response>
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Recoleta""
+}
+</json_response>"
+departamentos hasta 2000 uf,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>","<json_response>
+  {
+    ""tipo_inmueble"": ""departamentos"",
+    ""superficie_max"": ""2000""
+  }
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""precio_max"": 2000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Departamento la cisterna con 2 dormitorios,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Cisterna"",
+  ""dormitorios"": 2
+}
+</json_response>","$json_response = {}
+ 
+for filter in Possible_filters:
+    if filter in user_input:
+        if filter == ""tipo_inmueble"":
+            if ""departamento"" in user_input or ""apartamento"" in user_input:
+                $json_response[filter] = ""la cisterna""
+            elif ""casa"" in user_input:
+                $json_response[filter] = ""casa""
+        elif filter == ""comuna"":
+            if ""cisterna"" in user_input:
+                $json_response[filter] = ""la cisterna""
+            else:
+                $json_response[filter] = ""","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Cisterna"",
+  ""dormitorios"": 2
+}
+</json_response>"
+Quiero comprar un terreno,"<json_response>
+{}
+</json_response>",`<json_response>{}</json_response>`,"<json_response>
+{}
+</json_response>"
+Casa o depto en La Florida hasta 3.000 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>
+{
+  ""tipo_inmueble"": ""casa o departamento"",
+  ""comuna"": ""La Florida"",
+  ""precio_min"": ""3000""
+}
+</json_response>`","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""La Florida"",
+  ""precio_max"": 3000,
+  ""moneda"": ""UF""
+}
+</json_response>"
+Casa en pichilemu  nueva o usada con subsidio,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pichilemu"",
+  ""con_subsidio"": true
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""con_subsidio"": true,
+  ""comuna"": ""Pichilemu""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Pichilemu"",
+  ""con_subsidio"": true
+}
+</json_response>"
+busco departamento en san Joaquín cerca del metro y  de la facultad de ingeniería de la universidad de chile,"<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Joaquín"",
+  ""zona_transporte"": true,
+  ""zona_educacion"": true
+}
+</json_response>","`<json_response>`
+
+```
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Joaquín"",
+  ""zona_educacion"": ""Universidad de Chile, Facultad de Ingeniería""
+}
+</json_response>`
+
+Nota: Se han inferido los siguientes filtros:
+- tipo_inmueble: departamento
+- comuna: San Joaquín
+- zona_educacion: Universidad de Chile, Facultad de Ingeniería","<json_response>
+{
+  ""tipo_inmueble"": ""departamento"",
+  ""comuna"": ""San Joaquín"",
+  ""zona_transporte"": true,
+  ""zona_educacion"": true
+}
+</json_response>"
+Casa en valdivia hasta 7500 UF,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valdivia"",
+  ""precio_max"": 7500,
+  ""moneda"": ""UF""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""valdivia"",
+  ""precio_max"": ""7500""
+}
+</json_response>`
+```","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Valdivia"",
+  ""precio_max"": 7500,
+  ""moneda"": ""UF""
+}
+</json_response>"
+"una casa en Talca, en el barrio residencial nororiente","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Talca""
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Talca"",
+  ""dormitorios"": null,
+  ""banos"": null,
+  ""precio_min"": null,
+  ""precio_max"": null,
+  ""moneda"": null,
+  ""superficie_min"": null,
+  ""superficie_max"": null,
+  ""estacionamientos"": null,
+  ""bodegas"": null,
+  ""sostenibilidad_certificada"": null,
+  ""con_subsidio"": null,
+  ""piscina"":","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""Talca""
+}
+</json_response>"
+Casa,"<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>","$json_response = {}
+
+Since the user_input only contains a single word ""Casa"", which is not a filter, no filters are extracted.","<json_response>
+{
+  ""tipo_inmueble"": ""casa""
+}
+</json_response>"
+estoy buscando una casa con 3 habitaciones,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3
+}
+</json_response>","`<json_response>`
+
+```json
+{
+  ""dormitorios"": 3
+}
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""dormitorios"": 3
+}
+</json_response>"
+Casa en El Monte,"<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""El Monte""
+}
+</json_response>","<json_response>
+</json_response>","<json_response>
+{
+  ""tipo_inmueble"": ""casa"",
+  ""comuna"": ""El Monte""
+}
+</json_response>"
